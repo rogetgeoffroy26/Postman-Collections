@@ -330,6 +330,61 @@
         "description": ""
       },
       "response": []
+    },
+    {
+      "_postman_id": "2c02b641-7a14-e77f-31ce-1d0788057936",
+      "name": "Content.ad Ad Content for CID = 63736",
+      "request": {
+        "url": {
+          "raw": "{{CAD}}/advertiser/ad/list?campaign_id=63736",
+          "auth": {},
+          "host": [
+            "{{CAD}}"
+          ],
+          "path": [
+            "advertiser",
+            "ad",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "campaign_id",
+              "value": "63736",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "e2ece73a-b764-32fb-f76f-7c71edf378bc",
+      "name": "Content.ad Ad Content for CID = 66758",
+      "request": {
+        "url": null,
+        "method": null,
+        "header": [],
+        "body": {},
+        "description": null
+      },
+      "response": []
     }
   ]
 }
