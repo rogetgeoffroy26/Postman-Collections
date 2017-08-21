@@ -1,0 +1,292 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Dev_Environment",
+    "_postman_id": "d283168f-e98f-4ffc-aded-98674c9419b9",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "900ceb38-b148-e458-d4df-32fb3c834269",
+      "name": "Revcontent Post Access Token",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"access_token\"] = jsonData.access_token !== \"\";",
+              "",
+              "postman.setEnvironmentVariable(\"JWT\", jsonData.access_token);",
+              "",
+              "console.log('{{JWT}}');"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://api.revcontent.io/oauth/token",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "client_credentials",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "client_id",
+              "value": "RvcGlyx",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "client_secret",
+              "value": "243eede81076c9ce599c7cdc603698f2c787a1dc",
+              "description": "",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "api key 1"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "ccfbcf11-8843-fea7-2de1-52a8f7752b54",
+      "name": "Revcontent Get Access Token",
+      "request": {
+        "url": {
+          "raw": "https://api.revcontent.io/stats/api/v1.0/widgets?domain=https://www.revcontent.com/boost/301939?%26campaign_archived=1&device=all&date_from=2017-08-09&date_to=2017-08-15&limit=100&offset=1",
+          "protocol": "https",
+          "auth": {},
+          "host": [
+            "api",
+            "revcontent",
+            "io"
+          ],
+          "path": [
+            "stats",
+            "api",
+            "v1.0",
+            "widgets"
+          ],
+          "query": [
+            {
+              "key": "domain",
+              "value": "https://www.revcontent.com/boost/301939?%26campaign_archived=1",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "device",
+              "value": "all",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "date_from",
+              "value": "2017-08-09",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "date_to",
+              "value": "2017-08-15",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "limit",
+              "value": "100",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "offset",
+              "value": "1",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer 2ca4ac9a6c7b50426fb915eade7e9abfb7ec1892",
+            "description": ""
+          },
+          {
+            "key": "Content-type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "78f5ff24-61c9-0a79-1133-1df9ecbc01f3",
+      "name": "Revcontent boosts_performance",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"Date\"] = jsonData.data[0].date === \"2017-08-08\";",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://api.revcontent.io/stats/api/v1.0/boosts/performance",
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer 2ca4ac9a6c7b50426fb915eade7e9abfb7ec1892",
+            "description": ""
+          },
+          {
+            "key": "Content-type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"test_key\": \"{{foo}}\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "8e4a7bc8-539e-2352-424c-111beb4ba47b",
+      "name": "Content.ad Get Access Token",
+      "request": {
+        "url": "{{CAD}}/advertiser/login",
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic NzdmZTZmYzgtZmRhMS00OTE5LWFjOWYtZmU3M2ZkM2RiNWRjOlZSSFAtKktFNGQjMDZLRg==",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f0fb1bd6-5c28-79ad-22d8-4bb0b66698ec",
+      "name": "Content.ad Campaign List",
+      "request": {
+        "url": "{{CAD}}/advertiser/campaigns/list",
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "3512b60f-adf8-d0dc-613f-5dc218dbd94d",
+      "name": "Content.ad Ad Content for CID = 59281",
+      "request": {
+        "url": {
+          "raw": "{{CAD}}/advertiser/ad/list?campaign_id=59281",
+          "auth": {},
+          "host": [
+            "{{CAD}}"
+          ],
+          "path": [
+            "advertiser",
+            "ad",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "campaign_id",
+              "value": "59281",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "2a6a2225-460f-65ee-62b4-27d04f526d13",
+      "name": "Content.ad Block List",
+      "request": {
+        "url": "{{CAD}}/advertiser/blocklist/list",
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
