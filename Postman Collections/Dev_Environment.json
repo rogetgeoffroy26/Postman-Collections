@@ -600,6 +600,49 @@
         "description": ""
       },
       "response": []
+    },
+    {
+      "_postman_id": "7a82ec13-dc4d-d0b3-6436-330a00fb17b3",
+      "name": "Content.ad Ad Content CID = 7425",
+      "request": {
+        "url": {
+          "raw": "{{CAD}}/advertiser/ad/list?campaign_id=7425",
+          "auth": {},
+          "host": [
+            "{{CAD}}"
+          ],
+          "path": [
+            "advertiser",
+            "ad",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "campaign_id",
+              "value": "7425",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
     }
   ]
 }
