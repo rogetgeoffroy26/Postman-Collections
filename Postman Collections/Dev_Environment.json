@@ -428,6 +428,92 @@
         "description": ""
       },
       "response": []
+    },
+    {
+      "_postman_id": "a3b33fcc-c924-5022-fc9a-4b6c73e65c3d",
+      "name": "Content.ad Ad Content for CID = 66761",
+      "request": {
+        "url": {
+          "raw": "{{CAD}}/advertiser/ad/list?campaign_id=66761",
+          "auth": {},
+          "host": [
+            "{{CAD}}"
+          ],
+          "path": [
+            "advertiser",
+            "ad",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "campaign_id",
+              "value": "66761",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "6400416d-710a-4b99-c369-5506d5eda865",
+      "name": "Content.ad Ad Content CID = 66959",
+      "request": {
+        "url": {
+          "raw": "{{CAD}}/advertiser/ad/list?campaign_id=66959",
+          "auth": {},
+          "host": [
+            "{{CAD}}"
+          ],
+          "path": [
+            "advertiser",
+            "ad",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "campaign_id",
+              "value": "66959",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
     }
   ]
 }
