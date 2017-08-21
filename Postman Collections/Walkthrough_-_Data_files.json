@@ -1,0 +1,97 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Walkthrough - Data files",
+    "_postman_id": "48c48926-4069-0ab5-8c7b-ad9985f4c77e",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "578dc1b3-490f-3b4a-216b-f40f5c36ae81",
+      "name": "Get username",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Body contains username\"] = responseBody.has(data.username);",
+              "tests[\"Body contains password\"] = responseBody.has(data.password);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "http://dump.getpostman.com/get?username={{username}}&password={{password}}",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "90958c72-4475-b26f-25d9-f48fdfa8fd35",
+      "name": "Post username",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Body contains url\"] = responseBody.has(data.url);",
+              "tests[\"Body contains username\"] = responseBody.has(data.username);",
+              "tests[\"Body contains password\"] = responseBody.has(data.password);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "http://dump.getpostman.com/post",
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "{{username}}",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "{{password}}",
+              "type": "text"
+            },
+            {
+              "key": "url",
+              "value": "{{url}}",
+              "type": "text"
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "3e7d3b71-b6db-2137-7018-195c70aeb561",
+      "name": "Get collections",
+      "request": {
+        "url": "https://api.getpostman.com/collections ",
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{postman_api_key}}",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
