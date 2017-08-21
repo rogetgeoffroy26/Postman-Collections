@@ -385,6 +385,49 @@
         "description": null
       },
       "response": []
+    },
+    {
+      "_postman_id": "1e1740a5-49a1-7e19-c1fc-f10fdc6334d2",
+      "name": "Content.ad Ad Content for CID = 66759",
+      "request": {
+        "url": {
+          "raw": "{{CAD}}/advertiser/ad/list?campaign_id=66759",
+          "auth": {},
+          "host": [
+            "{{CAD}}"
+          ],
+          "path": [
+            "advertiser",
+            "ad",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "campaign_id",
+              "value": "66759",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "auth_token",
+            "value": "{{CADauth}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
     }
   ]
 }
