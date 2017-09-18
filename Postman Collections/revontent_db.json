@@ -992,12 +992,12 @@
               },
               {
                 "key": "date_from",
-                "value": "2017-07-21",
+                "value": "{{dateFrom60days}}",
                 "description": ""
               },
               {
                 "key": "date_to",
-                "value": "2017-09-19",
+                "value": "{{today}}",
                 "description": ""
               }
             ],
