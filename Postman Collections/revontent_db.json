@@ -2483,6 +2483,1373 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "3a25491d-6ed7-274f-eb0e-5d1994220cd5",
+      "name": "ChrisQuant copy",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "c7e3fc27-1768-e9ff-16a9-66848188b978",
+          "name": "Post Access Token",
+          "request": {
+            "url": "https://api.revcontent.io/oauth/token",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "client_credentials",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "ChrisQuant",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "client_secret",
+                  "value": "e16efb26a48614d8392fce0ff8eae0d2498c7bf1",
+                  "description": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "api key 1"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "e37e168c-290c-a91f-5fe4-1bc7769753f2",
+          "name": "Get Access Token",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/widgets?domain=https://www.revcontent.com/boost/301939?%26campaign_archived=1&device=all",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "widgets"
+              ],
+              "query": [
+                {
+                  "key": "domain",
+                  "value": "https://www.revcontent.com/boost/301939?%26campaign_archived=1",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "device",
+                  "value": "all",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "e717e24c-4a0b-4ca7-b3c3-f9c6edb932f9",
+          "name": "boost performance",
+          "request": {
+            "url": "https://api.revcontent.io/stats/api/v1.0/boosts/performance",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": [
+            {
+              "id": "0b27b701-fac8-d5cf-9a7c-9486ab9e6bc4",
+              "name": "test 1",
+              "originalRequest": {
+                "url": "https://api.revcontent.io/stats/api/v1.0/boosts/performance",
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 445b238a935348319f0105ddf12b598329ef6114",
+                    "description": "",
+                    "warning": ""
+                  },
+                  {
+                    "key": "Content-type",
+                    "value": "application/xml",
+                    "description": "",
+                    "warning": ""
+                  }
+                ],
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "xml",
+              "_postman_previewtype": "text",
+              "header": [
+                {
+                  "name": "cache-control",
+                  "key": "cache-control",
+                  "value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+                  "description": ""
+                },
+                {
+                  "name": "connection",
+                  "key": "connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "content-length",
+                  "key": "content-length",
+                  "value": "2367",
+                  "description": ""
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Tue, 15 Aug 2017 20:08:03 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "expires",
+                  "key": "expires",
+                  "value": "Thu, 19 Nov 1981 08:52:00 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "pragma",
+                  "key": "pragma",
+                  "value": "no-cache",
+                  "description": ""
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache/2.4.7 (Ubuntu)",
+                  "description": ""
+                },
+                {
+                  "name": "status",
+                  "key": "status",
+                  "value": "200",
+                  "description": ""
+                },
+                {
+                  "name": "x-content-type-options",
+                  "key": "x-content-type-options",
+                  "value": "nosniff",
+                  "description": ""
+                },
+                {
+                  "name": "x-frame-options",
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN",
+                  "description": ""
+                },
+                {
+                  "name": "x-permitted-cross-domain-policies",
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "master-only",
+                  "description": ""
+                },
+                {
+                  "name": "x-xss-protection",
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "71",
+              "body": "{\"success\":true,\"data\":[{\"date\":\"2017-08-08\",\"impressions\":\"197659\",\"viewable_impressions\":\"41130\",\"clicks\":\"353\",\"conversions\":\"0\",\"ctr\":\"0.1786\",\"avg_cpc\":\"0.058668555240793201133144\",\"avg_cpv\":\"0.503525407245319717967420\",\"cost\":\"20.71000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-20.71000000000000000000\"},{\"date\":\"2017-08-09\",\"impressions\":\"937477\",\"viewable_impressions\":\"212746\",\"clicks\":\"2295\",\"conversions\":\"0\",\"ctr\":\"0.2448\",\"avg_cpc\":\"0.056871459694989106753813\",\"avg_cpv\":\"0.613501546445056546304043\",\"cost\":\"130.52000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-130.52000000000000000000\"},{\"date\":\"2017-08-10\",\"impressions\":\"946032\",\"viewable_impressions\":\"221003\",\"clicks\":\"2599\",\"conversions\":\"0\",\"ctr\":\"0.2747\",\"avg_cpc\":\"0.056540977298961138899577\",\"avg_cpv\":\"0.664923100591394686949950\",\"cost\":\"146.95000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-146.95000000000000000000\"},{\"date\":\"2017-08-11\",\"impressions\":\"891079\",\"viewable_impressions\":\"240903\",\"clicks\":\"2989\",\"conversions\":\"0\",\"ctr\":\"0.3354\",\"avg_cpc\":\"0.055744396119103379056541\",\"avg_cpv\":\"0.691647675620477951706703\",\"cost\":\"166.62000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-166.62000000000000000000\"},{\"date\":\"2017-08-12\",\"impressions\":\"855536\",\"viewable_impressions\":\"199575\",\"clicks\":\"2393\",\"conversions\":\"0\",\"ctr\":\"0.2797\",\"avg_cpc\":\"0.049991642290012536564981\",\"avg_cpv\":\"0.599423775522986345985218\",\"cost\":\"119.63000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-119.63000000000000000000\"},{\"date\":\"2017-08-13\",\"impressions\":\"1028150\",\"viewable_impressions\":\"249928\",\"clicks\":\"2857\",\"conversions\":\"0\",\"ctr\":\"0.2779\",\"avg_cpc\":\"0.044389219460973048652433\",\"avg_cpv\":\"0.507426138727953650651387\",\"cost\":\"126.82000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-126.82000000000000000000\"},{\"date\":\"2017-08-14\",\"impressions\":\"1101023\",\"viewable_impressions\":\"293853\",\"clicks\":\"3174\",\"conversions\":\"0\",\"ctr\":\"0.2883\",\"avg_cpc\":\"0.041055450535601764335224\",\"avg_cpv\":\"0.443453019026520062752464\",\"cost\":\"130.31000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-130.31000000000000000000\"},{\"date\":\"2017-08-15\",\"impressions\":\"928180\",\"viewable_impressions\":\"295292\",\"clicks\":\"3316\",\"conversions\":\"0\",\"ctr\":\"0.3573\",\"avg_cpc\":\"0.038733413751507840772014\",\"avg_cpv\":\"0.434959294528805385855356\",\"cost\":\"128.44000000000000000000\",\"return\":\"0.0000\",\"profit\":\"-128.44000000000000000000\"}]}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "ccfbb5c9-a1e3-c869-4715-1f2368d1f1a9",
+          "name": "boost_id content id",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/content",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "content"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": ""
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "ed43e533-ba58-6a2c-c7c3-42205d90fb3c",
+          "name": "targets for boost_id 301245 (72 hours)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301245"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "ad1fadf8-624e-2586-bb3a-72cdb815d26f",
+          "name": "targets for boost_id 297739 (72 hours)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "297739"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "6d496c78-190b-47b1-f32d-857a0853b532",
+          "name": "targets for boost_id 301662 (72 hours)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301662"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "6ad4e4ca-564c-05d1-bf84-afdb97b7182a",
+          "name": "targets for boost_id 301660 (72 hours)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301660"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "1f3f8dd3-95f3-9967-e11e-6a0e4e269f77",
+          "name": "targets for boost_id 298981 (72 hours)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "298981"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "9265813d-c0b7-1905-69fb-ed36cb1a53f8",
+          "name": "targets for boost_id 301655 (72 hours)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301655"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5db9901a-553d-deaa-1002-f7db798a8904",
+          "name": "Get Widget Stats for boost_id 301245",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301245"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "91e07d27-d074-ff93-5e19-cc18469c1158",
+          "name": "Get Widget Stats for boost_id 297739",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "297739"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "542d556b-3311-5c72-f8c2-79f613cfb70d",
+          "name": "Get Widget Stats for boost_id 301662",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301662"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "86be10af-ec0a-8d92-6f10-ca7f97e8b760",
+          "name": "Get Widget Stats for boost_id 301660",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301660"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "4b66590c-fc3e-3c99-7e1a-00b8c44a8209",
+          "name": "Get Widget Stats for boost_id 298981",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "298981"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "78a2d1fe-e808-8497-d69f-d1664ad4383a",
+          "name": "Get Widget Stats for boost_id 301655",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301655"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "4d46283d-d8cd-c7c1-a0e5-bbd02521a214",
+          "name": "targets for boost_id 301245 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301245"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "301549bd-a977-26f6-a464-98977a3839e3",
+          "name": "targets for boost_id 297739 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "297739"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "746422e8-25f2-c01d-ebbd-8773bc189dda",
+          "name": "targets for boost_id 301662 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301662"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "1375c13c-8d0a-d078-e167-322f468c356f",
+          "name": "targets for boost_id 301660 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301660"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3e9f58ef-71fc-cbac-1ec0-fd725b297b16",
+          "name": "targets for boost_id 298981 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "298981"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "bb6ef2dd-1a5b-3e8a-80ec-f2d3fcabed39",
+          "name": "targets for boost_id 301655 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301655"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
