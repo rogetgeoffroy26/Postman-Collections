@@ -2243,7 +2243,7 @@
         },
         {
           "_postman_id": "063c2367-55e1-df5c-9ad4-37ef876e2d6c",
-          "name": "targets for boost_id 301660 (60 days) copy",
+          "name": "targets for boost_id 298981 (60 days)",
           "request": {
             "url": {
               "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
