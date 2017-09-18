@@ -849,6 +849,66 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "6b6a0204-9075-1b43-9e47-f32515aeef01",
+          "name": "targets for boost_id 301907 (60 days)",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from=2017-07-20&date_to=2017-09-18",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "2017-07-20",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "2017-09-18",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301907"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{rvcglyx-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
         }
       ]
     }
