@@ -2062,7 +2062,7 @@
         },
         {
           "_postman_id": "9722bb26-db4f-da0c-a384-186ecc1d70cf",
-          "name": "targets for boost_id 301939 (60 days)",
+          "name": "targets for boost_id 301660 (60 days)",
           "request": {
             "url": {
               "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
