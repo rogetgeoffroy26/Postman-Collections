@@ -2421,6 +2421,66 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "2ae931c2-5e65-2067-3c47-1569459ef5d6",
+          "name": "targets for boost_id 298981 (60 days) copy",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom60days}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "298981"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
         }
       ]
     }
