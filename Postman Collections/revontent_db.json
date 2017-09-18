@@ -2062,6 +2062,67 @@
           "response": []
         },
         {
+          "_postman_id": "bed499cb-f322-d439-d36e-73bbeb64adff",
+          "name": "Get Widget Stats for boost_id 301655",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{firstOfMonth}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "298981"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{chrisquant-auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        },
+        {
           "_postman_id": "c4f3c3f8-b31b-3b30-ddbd-6bc426cba814",
           "name": "targets for boost_id 301245 (60 days)",
           "request": {
@@ -2326,67 +2387,6 @@
                 {
                   "key": "date_from",
                   "value": "{{dateFrom60days}}",
-                  "equals": true,
-                  "description": ""
-                },
-                {
-                  "key": "date_to",
-                  "value": "{{today}}",
-                  "equals": true,
-                  "description": ""
-                }
-              ],
-              "variable": [
-                {
-                  "key": "boost_id",
-                  "value": "298981"
-                }
-              ]
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "{{chrisquant-auth}}",
-                "description": ""
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
-              }
-            ],
-            "body": {},
-            "description": ""
-          },
-          "response": []
-        },
-        {
-          "_postman_id": "bed499cb-f322-d439-d36e-73bbeb64adff",
-          "name": "Get Widget Stats for boost_id 298981 copy",
-          "request": {
-            "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to={{today}}",
-              "protocol": "https",
-              "auth": {},
-              "host": [
-                "api",
-                "revcontent",
-                "io"
-              ],
-              "path": [
-                "stats",
-                "api",
-                "v1.0",
-                "boosts",
-                ":boost_id",
-                "widgets",
-                "stats"
-              ],
-              "query": [
-                {
-                  "key": "date_from",
-                  "value": "{{firstOfMonth}}",
                   "equals": true,
                   "description": ""
                 },
