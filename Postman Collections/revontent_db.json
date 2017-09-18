@@ -608,7 +608,7 @@
         },
         {
           "_postman_id": "41dc1505-47ec-2fec-062f-6dca045c8133",
-          "name": "Get Widget Stats",
+          "name": "Get Widget Stats for boost_id 301907",
           "request": {
             "url": {
               "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats",
