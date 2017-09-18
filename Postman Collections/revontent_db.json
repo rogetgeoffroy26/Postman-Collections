@@ -761,7 +761,7 @@
           "name": "Get Widget Stats for boost_id 301938",
           "request": {
             "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from=2017-09-01&date_to=2017-09-18",
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats?date_from={{firstOfMonth}}&date_to=2017-09-18",
               "protocol": "https",
               "auth": {},
               "host": [
@@ -781,7 +781,7 @@
               "query": [
                 {
                   "key": "date_from",
-                  "value": "2017-09-01",
+                  "value": "{{firstOfMonth}}",
                   "equals": true,
                   "description": ""
                 },
