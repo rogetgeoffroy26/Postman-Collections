@@ -343,7 +343,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer 86ffcbbef0928cfef9ea2bffa5b3b8857daf04b3",
+                "value": "{{auth}}",
                 "description": ""
               },
               {
