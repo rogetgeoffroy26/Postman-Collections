@@ -497,6 +497,29 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "4fc93d80-661b-f966-883c-513510064c97",
+          "name": "Get All Widgets",
+          "request": {
+            "url": "https://api.revcontent.io/stats/api/v1.0/widgets",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/javascript",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
         }
       ]
     }
