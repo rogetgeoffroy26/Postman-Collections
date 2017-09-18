@@ -2038,7 +2038,7 @@
               "variable": [
                 {
                   "key": "boost_id",
-                  "value": "301938"
+                  "value": "301662"
                 }
               ]
             },
@@ -2046,7 +2046,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{rvcglyx-auth}}",
+                "value": "{{chrisquant-auth}}",
                 "description": ""
               },
               {
