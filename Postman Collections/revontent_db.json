@@ -1696,55 +1696,6 @@
           "response": []
         },
         {
-          "_postman_id": "8155fde9-5892-5ee5-8c8d-65cfb852124f",
-          "name": "Get Widget IDs",
-          "request": {
-            "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets/optimizer/widgets",
-              "protocol": "https",
-              "auth": {},
-              "host": [
-                "api",
-                "revcontent",
-                "io"
-              ],
-              "path": [
-                "stats",
-                "api",
-                "v1.0",
-                "boosts",
-                ":boost_id",
-                "targets",
-                "optimizer",
-                "widgets"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "key": "boost_id",
-                  "value": "301907"
-                }
-              ]
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "{{rvcglyx-auth}}",
-                "description": ""
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
-              }
-            ],
-            "body": {},
-            "description": ""
-          },
-          "response": []
-        },
-        {
           "_postman_id": "13ff069d-0868-2cbe-b705-37b06742795f",
           "name": "Get Widget Stats for boost_id 301245",
           "request": {
