@@ -714,7 +714,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{auth}}",
+                "value": "{{rvcglyx-auth}}",
                 "description": ""
               },
               {
