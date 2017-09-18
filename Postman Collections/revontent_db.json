@@ -1148,7 +1148,7 @@
       "item": [
         {
           "_postman_id": "62386f7f-1cf7-8d8a-5561-bbcbd477ee31",
-          "name": "Post Access Tken",
+          "name": "Post Access Token",
           "request": {
             "url": "https://api.revcontent.io/oauth/token",
             "method": "POST",
