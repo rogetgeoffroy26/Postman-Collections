@@ -1641,7 +1641,7 @@
           "name": "Get All Widgets",
           "request": {
             "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/widgets?date_from=2017-09-01&date_to=2016-09-18&aggregate=yes",
+              "raw": "https://api.revcontent.io/stats/api/v1.0/widgets?date_from={{firstOfMonth}}&date_to={{today}}&aggregate=yes",
               "protocol": "https",
               "auth": {},
               "host": [
@@ -1658,13 +1658,13 @@
               "query": [
                 {
                   "key": "date_from",
-                  "value": "2017-09-01",
+                  "value": "{{firstOfMonth}}",
                   "equals": true,
                   "description": ""
                 },
                 {
                   "key": "date_to",
-                  "value": "2016-09-18",
+                  "value": "{{today}}",
                   "equals": true,
                   "description": ""
                 },
