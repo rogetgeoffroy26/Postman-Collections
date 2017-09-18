@@ -1191,7 +1191,7 @@
           "name": "Get Access Token",
           "request": {
             "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/widgets?domain=https://www.revcontent.com/boost/301939?%26campaign_archived=1&device=all&date_from=2017-08-09&date_to=2017-08-15&limit=100&offset=1",
+              "raw": "https://api.revcontent.io/stats/api/v1.0/widgets?domain=https://www.revcontent.com/boost/301939?%26campaign_archived=1&device=all",
               "protocol": "https",
               "auth": {},
               "host": [
@@ -1217,30 +1217,6 @@
                   "value": "all",
                   "equals": true,
                   "description": ""
-                },
-                {
-                  "key": "date_from",
-                  "value": "2017-08-09",
-                  "equals": true,
-                  "description": ""
-                },
-                {
-                  "key": "date_to",
-                  "value": "2017-08-15",
-                  "equals": true,
-                  "description": ""
-                },
-                {
-                  "key": "limit",
-                  "value": "100",
-                  "equals": true,
-                  "description": ""
-                },
-                {
-                  "key": "offset",
-                  "value": "1",
-                  "equals": true,
-                  "description": ""
                 }
               ],
               "variable": []
@@ -1249,7 +1225,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{rvcglyx-auth}}",
+                "value": "{{chrisquant-auth}}",
                 "description": ""
               },
               {
