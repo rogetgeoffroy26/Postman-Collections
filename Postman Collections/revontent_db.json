@@ -868,7 +868,7 @@
           "name": "targets for boost_id 301907 (60 days)",
           "request": {
             "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from=2017-07-20&date_to=2017-09-18",
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom60days}}&date_to={{today}}",
               "protocol": "https",
               "auth": {},
               "host": [
@@ -887,13 +887,13 @@
               "query": [
                 {
                   "key": "date_from",
-                  "value": "2017-07-20",
+                  "value": "{{dateFrom60days}}",
                   "equals": true,
                   "description": ""
                 },
                 {
                   "key": "date_to",
-                  "value": "2017-09-18",
+                  "value": "{{today}}",
                   "equals": true,
                   "description": ""
                 }
