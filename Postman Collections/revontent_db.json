@@ -520,6 +520,55 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "ae0af21c-03ee-24aa-e4db-6542b351d795",
+          "name": "Get Widget IDs",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets/optimizer/widgets",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "targets",
+                "optimizer",
+                "widgets"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301907"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
         }
       ]
     }
