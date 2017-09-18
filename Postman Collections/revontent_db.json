@@ -653,6 +653,54 @@
             "description": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "489ee075-4a08-127d-1f65-cd7d6bdae0e7",
+          "name": "Get Widget Stats for boost_id 301936",
+          "request": {
+            "url": {
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/widgets/stats",
+              "protocol": "https",
+              "auth": {},
+              "host": [
+                "api",
+                "revcontent",
+                "io"
+              ],
+              "path": [
+                "stats",
+                "api",
+                "v1.0",
+                "boosts",
+                ":boost_id",
+                "widgets",
+                "stats"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "boost_id",
+                  "value": "301936"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{auth}}",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {},
+            "description": ""
+          },
+          "response": []
         }
       ]
     }
