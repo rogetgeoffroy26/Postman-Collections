@@ -435,7 +435,7 @@
           "name": "targets for boost_id 301938",
           "request": {
             "url": {
-              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets",
+              "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
               "protocol": "https",
               "auth": {},
               "host": [
@@ -451,7 +451,20 @@
                 ":boost_id",
                 "targets"
               ],
-              "query": [],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "{{dateFrom72hours}}",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "date_to",
+                  "value": "{{today}}",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
               "variable": [
                 {
                   "key": "boost_id",
