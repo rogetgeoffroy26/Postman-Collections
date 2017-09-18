@@ -296,7 +296,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer 0525ea19c735a171242a78866419f0a02b4b43ab",
+                "value": "{{auth}}",
                 "description": ""
               },
               {
