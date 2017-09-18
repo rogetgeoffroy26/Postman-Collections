@@ -1638,7 +1638,7 @@
         },
         {
           "_postman_id": "2403a4a5-dcfb-e924-8585-53be8db39b57",
-          "name": "targets for boost_id 298981 (72 hours) copy",
+          "name": "targets for boost_id 298981 (72 hours)",
           "request": {
             "url": {
               "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
