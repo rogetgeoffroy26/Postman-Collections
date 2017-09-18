@@ -1578,7 +1578,7 @@
         },
         {
           "_postman_id": "abc3a3f6-536f-06f2-d161-aa6ca693b631",
-          "name": "targets for boost_id 301662 (72 hours)",
+          "name": "targets for boost_id 301660 (72 hours)",
           "request": {
             "url": {
               "raw": "https://api.revcontent.io/stats/api/v1.0/boosts/:boost_id/targets?date_from={{dateFrom72hours}}&date_to={{today}}",
@@ -1614,7 +1614,7 @@
               "variable": [
                 {
                   "key": "boost_id",
-                  "value": "301939"
+                  "value": "301662"
                 }
               ]
             },
@@ -1622,7 +1622,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{rvcglyx-auth}}",
+                "value": "{{chrisquant-auth}}",
                 "description": ""
               },
               {
